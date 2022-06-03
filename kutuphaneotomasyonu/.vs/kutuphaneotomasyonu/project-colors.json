@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "0b66eafc-b05e-4b8f-ac31-b7cd782a627a": {
+      "ProjectGuid": "0b66eafc-b05e-4b8f-ac31-b7cd782a627a",
+      "DisplayName": "kutuphaneotomasyonu",
+      "ColorIndex": 0
+    },
+    "d07f33da-9123-4cc6-b05e-c0626e7deb86": {
+      "ProjectGuid": "d07f33da-9123-4cc6-b05e-c0626e7deb86",
+      "DisplayName": "KP.ORM",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

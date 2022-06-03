@@ -1,0 +1,282 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0B66EAFC-B05E-4B8F-AC31-B7CD782A627A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>kutuphaneotomasyonu</RootNamespace>
+    <AssemblyName>kutuphaneotomasyonu</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="anasayfa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="anasayfa.Designer.cs">
+      <DependentUpon>anasayfa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gorevli.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gorevli.Designer.cs">
+      <DependentUpon>gorevli.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gorevligiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="gorevligiris.Designer.cs">
+      <DependentUpon>gorevligiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kitap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kitap.Designer.cs">
+      <DependentUpon>kitap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kitapgoruntule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kitapgoruntule.Designer.cs">
+      <DependentUpon>kitapgoruntule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kutuphanegiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kutuphanegiris.Designer.cs">
+      <DependentUpon>kutuphanegiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="odunc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="odunc.Designer.cs">
+      <DependentUpon>odunc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogrenci.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogrenci.Designer.cs">
+      <DependentUpon>ogrenci.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ogrencigiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ogrencigiris.Designer.cs">
+      <DependentUpon>ogrencigiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="raporlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="raporlar.Designer.cs">
+      <DependentUpon>raporlar.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="anasayfa.resx">
+      <DependentUpon>anasayfa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gorevli.resx">
+      <DependentUpon>gorevli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="gorevligiris.resx">
+      <DependentUpon>gorevligiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kitap.resx">
+      <DependentUpon>kitap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kitapgoruntule.resx">
+      <DependentUpon>kitapgoruntule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kutuphanegiris.resx">
+      <DependentUpon>kutuphanegiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="odunc.resx">
+      <DependentUpon>odunc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogrenci.resx">
+      <DependentUpon>ogrenci.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ogrencigiris.resx">
+      <DependentUpon>ogrencigiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="raporlar.resx">
+      <DependentUpon>raporlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2784403.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\27844032.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\2784410.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r7.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r9.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r10.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\books-background-drawing_csp89514691.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\background1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\6.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\books-colorful-covers-yellow-background_23-2148207580.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r61.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r51.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\colorful-notepads-laid-out-order_23-2148207576.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\r52.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\woman_icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\personel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\personel1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\imgbin-graduation-ceremony-square-academic-cap-computer-icons-student-graduate-university-bachelor-Ck5BhGeSwgrh80c5T3B6ZVzKG.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\computer-icons-reading-student-school-student.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\156-1566120_png-logo-for-student-transparent-png.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\27844031.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vector-reading-icon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\156-1566120_png-logo-for-student-transparent-png1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\computer-icons-reading-student-school-student1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ogrenci.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\531-5316309_letter-writing-service-uc-berkeley-student-icon-gif.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\50-505031_log-book-png-png-clip-art-transparent-books.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10-104761_books-png-image-school-pinterest-images-transparent-background.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\50-505031_log-book-png-png-clip-art-transparent-books1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jjjj.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\internet-uzerinden-kitap-satisi-nasil-yapilir.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jjjj1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10-104761_books-png-image-school-pinterest-images-transparent-background1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\KP.ORM\KP.ORM.csproj">
+      <Project>{d07f33da-9123-4cc6-b05e-c0626e7deb86}</Project>
+      <Name>KP.ORM</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
